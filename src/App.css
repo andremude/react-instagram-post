@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    box-sizing: border-box;
+    font-size: 62.5%;
+     font-family: -apple-system,
+     BlinkMacSystemFont,
+     "Segoe UI",
+     "Roboto",
+     "Oxygen",
+     "Ubuntu",
+     "Cantarell",
+     "Fira Sans",
+     "Droid Sans",
+     "Helvetica Neue",
+     sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* <---------- HEADER ------------> */
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 60%;
+    height: 80px;
+    margin: 50px auto 0 auto;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(208, 208, 208);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 0 12px 0 7px;
+}
+
+.profile-name-container {
+  margin-right: auto;
+}
+
+.profile-name-container .profile-title {
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.header-container .menu-header {
+  width: 27px;
+  border-radius: 50px;
+  margin: 0 28px 0 0;
+}
+
+.header-container h4 {
+  margin-right: auto;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* <---------- MAIN ------------> */
+
+.main-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.main-container .main-img {
+  width: 60.10%;
+}
+
+/* <---------- FOOTER ------------> */
+
+.footer {
+  margin: 18px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 0.90rem;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-icons {
+  margin-bottom: 5px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.like {
+  background-image: url('./images/like.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+  background-size: 25px 25px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.like_active {
+  background-image: url('./images/like-active.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+  background-size: 25px 25px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.like:hover {
+  filter: invert(72%) sepia(10%) saturate(291%) hue-rotate(188deg) brightness(95%) contrast(88%);
+  cursor: pointer;
+}
+
+.like_active:hover {
+  filter: invert(72%) sepia(10%) saturate(291%) hue-rotate(188deg) brightness(95%) contrast(88%);
+  cursor: pointer;
+}
+
+.footer-icons .comment {
+  background-image: url('./images/comment.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+  background-size: 31px 31px;
+  cursor: pointer;
+
+}
+
+.footer-icons .comment:hover {
+  filter: invert(72%) sepia(10%) saturate(291%) hue-rotate(188deg) brightness(95%) contrast(88%);
+  cursor: pointer;
+}
+
+.footer-icons .send {
+  background-image: url('./images/send.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+  background-size: 22px 22px;
+  margin-left: -2px;
+  cursor: pointer;
+}
+
+.footer-icons .send:hover {
+  filter: invert(72%) sepia(10%) saturate(291%) hue-rotate(188deg) brightness(95%) contrast(88%);
+  cursor: pointer;
+}
+
+.save-icon-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: 1px;
+  cursor: pointer;
+}
+
+.save {
+  background-image: url('./images/save.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+  background-size: 22px 22px;
+  cursor: pointer;
+}
+
+.save_active {
+  background-image: url('./images/save-active.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 22px 22px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+ .save:hover {
+  filter: invert(72%) sepia(10%) saturate(291%) hue-rotate(188deg) brightness(95%) contrast(88%);
+  cursor: pointer;
+ }
+
+.caption-container  {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 6px;
+  cursor: pointer;
+}
+
+.caption {
+  display: flex;
+}
+
+.caption span {
+  margin-left: 10px;
 }
